@@ -4,7 +4,7 @@ function getRandomHexColor() {
 
 const createDives = document.querySelector('[data-create]');
 const destroyDives = document.querySelector('[data-destroy]');
-// const amountDives = document.querySelector("input");
+const placeDives = document.getElementById("boxes");
 
 const amounControl = () => {
   const amountDives = document.querySelector("input").value;
@@ -30,11 +30,15 @@ function createBoxes(amount) {
     side += 10;
   };
 
-  console.dir(arrDiv);
-  document.getElementById("boxes").append(...arrDiv);
+  placeDives.append(...arrDiv);
+};
+
+function destroyBoxes() {
+  placeDives.innerHTML = "";
 };
 
 createDives.addEventListener('click', amounControl);
+destroyDives.addEventListener('click', destroyBoxes);
 
 
 
