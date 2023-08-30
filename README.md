@@ -11,7 +11,7 @@ https://omenat83.github.io/goit-js-hw-06/index.html
 HTML містить порожній список ul#ingredients:
 `<ul id="ingredients"></ul>`
 JavaScript містить масив рядків:
-іngredients = ["Potatoes", "Mushrooms", "Garlic", "Tomatos", "Herbs", "Condiments" ];
+іngredients = ["Potatoes", "Mushrooms", "Garlic", "Tomatoes", "Herbs", "Condiments" ];
 
 Напиши скрипт, який для кожного елемента масиву ingredients:
 1. створить окремий елемент `<li>`. Обов'язково використовуй метод document.createElement().
